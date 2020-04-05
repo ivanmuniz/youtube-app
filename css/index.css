@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #c4302b;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fffffffc;
+    overflow: hidden;
+}
+
+header.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+header > div > h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+header.flex form {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+label {
+    display: none;
+}
+
+#search {
+    width: 90%;
+    padding: 12px 75px 12px 20px;
+    border: 1px solid #c4302b;
+    border-radius: 4px;
+    height: 40px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#searchBtn {
+    border: none;
+    width: 75px;
+    vertical-align: middle;
+    margin-left: -75px;
+    height: 40px;
+    background-color: #c4302b;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 30px;
+    color: white
+}
+
+#searchBtn:focus {
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+
+.btn {
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #c4302b;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 90px;
+}
+
+a {
+    display: block;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #f9eded;
+    border-radius: 10px;
+}
+
+a:visited:hover {
+    background-color: #eef5fb;
+    border-radius: 10px;
+}
+
+.videoBox {
+    display: flex;
+    padding: 10px 0 10px 10px;
+}
+
+.border:nth-child(n+2) .videoBox {
+    margin-top: 10px;
+}
+
+p {
+    color: black;
+    padding: 0 10px;
+}
+
+#pg-buttons {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.border:nth-child(n + 2) {
+    margin-top: 10px;
+    border-top: 1px solid #c4302b;
+}
+
+main {
+    background-color: rgba(250, 250, 250, 1);
+    margin-top: 120.14px;
+}
+
+section {
+    padding-top: 10px;
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+    header.flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header > div.header {
+        flex: 0.3;
+    }
+
+    header.flex form {
+        flex: 0.7;
+        margin-top: 0;
+    }
+
+    section {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    main {
+        margin-top: 81.14px;
+    }
+} 
+
+@media (min-width: 991px) {
+    header.flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header > div.header {
+        flex: 1;
+    }
+
+    header > div.header > h2 {
+        text-align: left;
+        flex: 1;
+        padding-left: 30px;
+    }
+
+    .space {
+        flex: 1;
+    }
+
+    header.flex form {
+        margin-top: 0;
+        flex: 2;
+    }
+
+    section {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    main {
+        margin-top: 81.14px;
+    } 
+}

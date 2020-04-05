@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube API</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="flex">
+        <div class="header">
+            <h2>YouTube API</h2>
+        </div>
+        <form id="form">
+            <div>
+                <label for="search">Ingrese lo que desea buscar:</label>
+                <input type="text" id="search" placeholder="Buscar">
+                <input type="submit" id="searchBtn" value="&#x2315;">
+            </div>
+        </form>
+        <div class="space"></div>
+    </header>
+
+    <main>
+        <section>
+            <div id="results"> 
+
+            </div>
+            <div id="pg-buttons" class="hide center">
+                <input id="prev" class="btn" type="submit" value="Previous page">
+                <input id="next" class="btn" type="submit" value="Next page">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
