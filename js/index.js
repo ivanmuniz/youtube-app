@@ -9,7 +9,6 @@ let q;
 
 const settings = {
     method : 'GET',
-    referrer: "https://ivanmuniz.github.io/youtube-app"
 };
 
 const displayVideos = (responseJSON) => {
